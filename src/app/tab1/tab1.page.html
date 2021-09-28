@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-title>
+      VIDEOS APP
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-searchbar placeholder="Buscar filme" showCancelButton="always"></ion-searchbar>
+
+  <ion-list>
+    <ion-item lines="full">
+      <ion-thumbnail slot="start">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/hgQDWqPegnDSFg7XlKMTxZ7VIX0.jpg" />
+      </ion-thumbnail>
+      <ion-label class="ion-text-wrap">
+        <div>
+          <h1>Round 6 (2021)</h1>
+          <p>2021 (BR) - 12H</p>
+          <p>Action & Adventure, Mistério, Drama</p>
+        </div>
+      </ion-label>
+
+      <ion-chip color="success" mode="ios" outline="true">
+        <ion-label>98%</ion-label>
+      </ion-chip>
+    </ion-item>
+  </ion-list>
+</ion-content>

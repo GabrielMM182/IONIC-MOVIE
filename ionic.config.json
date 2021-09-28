@@ -1,0 +1,7 @@
+{
+  "name": "videos",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
