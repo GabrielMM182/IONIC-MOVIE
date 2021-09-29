@@ -10,30 +10,30 @@
   <ion-searchbar placeholder="Buscar filme" showCancelButton="always"></ion-searchbar>
 
   <ion-list>
+    <!-- toda vez q tiver um array vai precisar de ngFor -->
+    <ion-item-sliding *ngFor="let filme of listaVideos">
+      <ion-item lines="full">
+        <ion-thumbnail slot="start">
+          <img [src]="filme.cartaz" />
+        </ion-thumbnail>
+        <ion-label class="ion-text-wrap">
+          <div>
+            <h1>{{filme.nome}}</h1>
+            <p>{{filme.lancamento}} - {{filme.duracao}}</p>
+            <ion-badge color="light"  *ngFor="let genero of filme.generos">{{genero}}</ion-badge>
+          </div>
+        </ion-label>
 
-    <ion-item-sliding>
-    <ion-item lines="full">
-      <ion-thumbnail slot="start">
-        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/hgQDWqPegnDSFg7XlKMTxZ7VIX0.jpg" />
-      </ion-thumbnail>
-      <ion-label class="ion-text-wrap">
-        <div>
-          <h1>Round 6 (2021)</h1>
-          <p>2021 (BR) - 12H</p>
-          <p>Action & Adventure, Mistério, Drama</p>
-        </div>
-      </ion-label>
-
-      <ion-chip color="success" mode="ios" outline="true">
-        <ion-label>98%</ion-label>
-      </ion-chip>
-    </ion-item>
-    <ion-item-options side="end">
-      <ion-item-option color="laranja" (click)="exibirAlertaFavorito()">
-        <ion-icon slot="icon-only" name="star"></ion-icon>
-      </ion-item-option>
-    </ion-item-options>
-  </ion-item-sliding>
+        <ion-chip color="success" mode="ios" outline="true">
+          <ion-label>{{filme.classificacao}}</ion-label>
+        </ion-chip>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option color="laranja" (click)="exibirAlertaFavorito()">
+          <ion-icon slot="icon-only" name="star"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
   </ion-list>
 
   

@@ -1,4 +1,4 @@
-- -PAREI NA AULA 16 !!!
+- -PAREI NA AULA 22 !!!
 
 ---------------- COMO INSTALAR CORRETAMENTE O ANDROID STUDIO -----------------
 https://www.youtube.com/watch?v=oKnG1VP43yY&list=LL&index=7
