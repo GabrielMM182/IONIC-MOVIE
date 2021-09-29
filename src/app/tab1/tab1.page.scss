@@ -21,4 +21,14 @@ ion-item {
     p+p {
         color: #8e8e8e;
     }
+
+    ion-chip {
+        padding-inline: 3px;
+    }
+
+    ion-badge {
+        font-weight: 300;
+        font-size: 0.6rem;
+        margin-right: 2px;
+    }
 }
