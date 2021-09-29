@@ -1,11 +1,14 @@
 - -PAREI NA AULA 22 !!!
 
+npm i -g @ionic/cli cordova cordova-res native-run
+
 ---------------- COMO INSTALAR CORRETAMENTE O ANDROID STUDIO -----------------
 https://www.youtube.com/watch?v=oKnG1VP43yY&list=LL&index=7
 
 $ JDK / SDK e GRADLE
 
 fazer donwload do arquivo jdk8
+https://www.oracle.com/java/technologies/downloads/#java8
 * criar uma variavel de sistema chamada JAVA_HOME
 * Colocar o endereço de instalação do JDK em C:\ProgramFile\Java\jdk_____
 * Edite a variavel path das variaveis de sistema e adciione: %JAVA_HOME%\bin
