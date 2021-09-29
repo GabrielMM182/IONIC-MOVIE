@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="dark">
     <ion-title>
-      VIDEOS APP
+      {{titulo}}
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -29,7 +29,7 @@
       </ion-chip>
     </ion-item>
     <ion-item-options side="end">
-      <ion-item-option (click)="exibirAlertaFavorito()">
+      <ion-item-option color="laranja" (click)="exibirAlertaFavorito()">
         <ion-icon slot="icon-only" name="star"></ion-icon>
       </ion-item-option>
     </ion-item-options>
