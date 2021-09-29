@@ -1,7 +1,7 @@
 {
-  "name": "videos",
+  "name": "videos-app",
   "integrations": {
-    "capacitor": {}
+    "cordova": {}
   },
   "type": "angular"
 }
