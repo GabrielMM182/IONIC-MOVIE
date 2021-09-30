@@ -1,18 +1,19 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="dark">
-    <ion-title>
-      {{titulo}}
-    </ion-title>
+    <ion-title> {{titulo}} </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-searchbar placeholder="Buscar filme" showCancelButton="always"></ion-searchbar>
+  <ion-searchbar
+    placeholder="Buscar filme"
+    showCancelButton="always"
+  ></ion-searchbar>
 
   <ion-list>
     <!-- toda vez q tiver um array vai precisar de ngFor -->
     <ion-item-sliding *ngFor="let filme of listaVideos">
-      <ion-item lines="full">
+      <ion-item lines="full" (click)="exibirFilme(filme)">
         <ion-thumbnail slot="start">
           <img [src]="filme.cartaz" />
         </ion-thumbnail>
@@ -20,12 +21,14 @@
           <div>
             <h1>{{filme.nome}}</h1>
             <p>{{filme.lancamento}} - {{filme.duracao}}</p>
-            <ion-badge color="light"  *ngFor="let genero of filme.generos">{{genero}}</ion-badge>
+            <ion-badge color="light" *ngFor="let genero of filme.generos"
+              >{{genero}}</ion-badge
+            >
           </div>
         </ion-label>
 
         <ion-chip color="success" mode="ios" outline="true">
-          <ion-label>{{filme.classificacao}}</ion-label>
+          <ion-label>{{filme.classificacao}}%</ion-label>
         </ion-chip>
       </ion-item>
       <ion-item-options side="end">
@@ -35,6 +38,4 @@
       </ion-item-options>
     </ion-item-sliding>
   </ion-list>
-
-  
 </ion-content>
