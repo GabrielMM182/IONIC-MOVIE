@@ -6,6 +6,7 @@
 
 <ion-content [fullscreen]="true">
   <ion-searchbar
+    (ionChange)="buscarFilmes($event)"
     placeholder="Buscar filme"
     showCancelButton="always"
   ></ion-searchbar>
