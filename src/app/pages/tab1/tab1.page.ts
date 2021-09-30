@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
 import { ToastController } from '@ionic/angular';
-import { IListaFilmes } from 'src/app/models/IFilmeAPI.model';
+import { IFilmeApi, IListaFilmes } from 'src/app/models/IFilmeAPI.model';
 import { DadosService } from 'src/app/services/dados.service';
 import { FilmeService } from 'src/app/services/filme.service';
 import { IFilme } from '../../models/IFilme.model';
@@ -50,7 +50,7 @@ export class Tab1Page {
       }
     }
 
-  exibirFilme(filme: IFilme) {
+  exibirFilme(filme: IFilmeApi) {
     this.dadosService.guardarDados('filme', filme);
     this.route.navigateByUrl('/dados-filme');
   }
