@@ -3,6 +3,8 @@
 ---------------- COMO INSTALAR CORRETAMENTE O ANDROID STUDIO -----------------
 https://www.youtube.com/watch?v=oKnG1VP43yY&list=LL&index=7
 
+https://stackoverflow.com/questions/68387270/android-studio-error-installed-build-tools-revision-31-0-0-is-corrupted
+
 $ JDK / SDK e GRADLE
 
 fazer donwload do arquivo jdk8
