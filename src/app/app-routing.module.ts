@@ -5,6 +5,14 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+  },
+  {
+    path: 'mortal',
+    loadChildren: () => import('./pages/filmes/mortal/mortal.module').then( m => m.MortalPageModule)
+  },
+  {
+    path: 'dados-filme',
+    loadChildren: () => import('./pages/dados-filme/dados-filme.module').then( m => m.DadosFilmePageModule)
   }
 ];
 @NgModule({
